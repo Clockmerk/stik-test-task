@@ -1,0 +1,31 @@
+{
+  "name": "stik-test-app",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --no-cache",
+    "lint:fix": "eslint --fix . --no-cache"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "nuxt": "^3.17.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.4.0",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxt/icon": "^1.13.0",
+    "@vueuse/nuxt": "^13.3.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "sass": "^1.89.0",
+    "typescript": "^5.8.3",
+    "vite-plugin-eslint2": "^5.0.3",
+    "vue-tsc": "^2.2.10"
+  }
+}

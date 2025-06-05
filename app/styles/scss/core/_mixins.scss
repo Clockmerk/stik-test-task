@@ -1,0 +1,22 @@
+@use "./breakpoints" as *;
+
+@mixin textOverflow($linesAmount: 1) {
+  display: -webkit-box;
+  line-clamp: $linesAmount;
+  -webkit-line-clamp: $linesAmount;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin breakpoint($width, $dir: up) {
+  @if $dir == up {
+    @media (min-width: $width) {
+      @content;
+    }
+  } @else if $dir == down {
+    @media (max-width: ($width + 1)) {
+      @content;
+    }
+  }
+}

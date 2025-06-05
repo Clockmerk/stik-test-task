@@ -1,0 +1,52 @@
+@use "../core" as *;
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	color: $black-middle;
+}
+
+main {
+	margin: 0 auto;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+
+*:disabled {
+	pointer-events: none;
+}
+
+span[class^="iconify"] {
+	color: $black-dark;
+}
+
+p {
+	@include breakpoint($breakpoint-md, down) {
+		font-size: 12px;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: $black-middle;
+	}
+}

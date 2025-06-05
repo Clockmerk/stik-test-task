@@ -17,7 +17,11 @@ body {
 }
 
 main {
-	margin: 0 auto;
+	margin-bottom: 100px;
+
+	@include breakpoint($breakpoint-md, down) {
+		margin-bottom: 40px;
+	}
 }
 
 button {
